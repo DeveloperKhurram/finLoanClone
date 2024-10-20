@@ -2,6 +2,7 @@
 @import url("hero-section.css");
 @import url("offer-section.css");
 @import url("work-section.css");
+@import url("apply.section.css");
 :root {
   --primary-color: #fff;
   --secondary-color: #040e27;
@@ -9,10 +10,11 @@
   --green-color: #33d4d6;
   --blue-color: #0a8cff;
 
-  --bg-blue: #F5FBFF;
+  --bg-blue: #f5fbff;
   --border-blue: #ddf0ff;
 
   --linear-gradient: linear-gradient(#040e27b3, #040e27b3);
+  --light-gradient: linear-gradient(#040e2766, #040e2766);
   --card-gradient: linear-gradient(rgb(10, 140, 255) 0%, rgb(5, 70, 128) 100%);
 
   --border-green: 0.1rem solid var(--green-color);
