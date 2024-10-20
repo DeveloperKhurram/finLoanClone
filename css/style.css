@@ -1,0 +1,130 @@
+@import url("header.css");
+@import url("hero-section.css");
+@import url("offer-section.css");
+@import url("responsive.css");
+:root {
+  --green-color: #33d4d6;
+  --primary-color: #fff;
+  --secondary-color: #040e27;
+  --gray-color: #7a838b;
+
+  --linear-gradient: linear-gradient(#040e27b3, #040e27b3);
+  --card-gradient: linear-gradient(rgb(10, 140, 255) 0%, rgb(5, 70, 128) 100%);
+
+  --border-green: 0.1rem solid var(--green-color);
+  --border-transparent: 0.1rem solid transparent;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: var(--gray-color);
+
+  /* background: var(--primary-color); */
+  background: yellow;
+}
+h1 {
+  font-size: clamp(2.8rem, 4.7vw, 6rem) !important;
+  color: var(--primary-color);
+  line-height: clamp(3.8, 5.6vw, 7.4rem);
+  margin-bottom: 4rem;
+}
+h2 {
+  font-size: 4.4rem;
+  color: var(--secondary-color);
+  margin: 1.5rem 0 0;
+  line-height: 5.2rem;
+}
+@media (width <= 991px) {
+  h2 {
+    font-size: 3.6rem;
+    line-height: 4.2rem;
+  }
+}
+@media (width <= 767px) {
+  h2 {
+    font-size: 3rem;
+    line-height: 3.6rem;
+  }
+}
+h3 {
+  font-size: clamp(1.8rem, 2.4vw, 3rem);
+  font-weight: 400;
+  color: var(--secondary-color);
+  margin-bottom: 1.9rem;
+  line-height: 2.8rem;
+}
+h4 {
+  font-size: 1.6rem;
+  color: var(--primary-color);
+  line-height: 2.8rem;
+  margin-bottom: 2rem;
+}
+p {
+  font-size: 1.6rem;
+  color: var(--gray-color);
+  line-height: 2.8rem;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  font-size: 1.4rem !important;
+  text-decoration: none;
+  color: var(--primary-color) !important;
+  outline: none;
+  transition: all 0.3s linear !important;
+  background-color: transparent !important;
+  font-weight: 500 !important	;
+  text-align: center !important;
+  &:hover,
+  &:active,
+  &:focus {
+    color: var(--green-color) !important;
+  }
+}
+.btn-normal,
+.btn-outline {
+  display: inline-block;
+  padding: 1.1rem 2.9rem 1.3rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.btn-outline {
+  border: var(--border-green);
+  background: transparent;
+  color: var(--green-color) !important;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border: var(--border-transparent);
+    background-color: var(--green-color);
+    color: var(--primary-color) !important;
+  }
+}
+.btn-normal {
+  border: var(--border-transparent) !important;
+  background: var(--green-color) !important;
+  color: var(--primary-color) !important;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border: var(--border-green) !important;
+    background: transparent !important;
+    color: var(--green-color) !important;
+  }
+}
