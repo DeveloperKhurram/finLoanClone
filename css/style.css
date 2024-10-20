@@ -1,6 +1,6 @@
 @import url("header.css");
 @import url("hero-section.css");
-/* @import url("offer-section.css"); */
+@import url("offer-section.css");
 :root {
   --green-color: #33d4d6;
   --primary-color: #fff;
