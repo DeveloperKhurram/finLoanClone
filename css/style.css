@@ -39,7 +39,7 @@ h1 {
 h2 {
   font-size: 4.4rem;
   color: var(--secondary-color);
-  margin: 1.5rem 0 0;
+  margin: 1.5rem 0;
   line-height: 5.2rem;
 }
 @media (width <= 991px) {
@@ -71,13 +71,14 @@ p {
   font-size: 1.6rem;
   color: var(--gray-color);
   line-height: 2.8rem;
+  margin-bottom: 1.3rem;
 }
 ul {
   list-style: none;
 }
 
 a {
-  font-size: 1.4rem !important;
+  font-size: 1.6rem !important;
   text-decoration: none;
   color: var(--primary-color) !important;
   outline: none;
@@ -136,10 +137,6 @@ a {
     margin-bottom: 30px;
     line-height: 35px;
   }
-  p {
-    margin-bottom: 15px;
-    margin-top: 10px;
-  }
 }
 @media (width > 768px) {
   h1 {
@@ -152,9 +149,6 @@ a {
   h1 {
     font-size: 40px;
     line-height: 1.4;
-  }
-  p {
-    font-size: 14px;
   }
 }
 @media (width > 1200px) {

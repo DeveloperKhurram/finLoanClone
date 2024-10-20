@@ -15,7 +15,7 @@
 }
 .right {
   padding: 0 3.2rem;
-  width: max-content;
+  /* width: max-content; */
 }
 .application {
   background: var(--primary-color);
