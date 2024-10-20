@@ -1,0 +1,48 @@
+header {
+  position: absolute;
+  width: 100%;
+}
+.navbar {
+  padding: 2.5rem 3.5rem;
+}
+.navList {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.nav-link {
+  font-size: 1.6rem !important;
+}
+.dropdown-menu {
+  width: 20rem !important;
+}
+.dropdown-item {
+  color: var(--secondary-color) !important;
+}
+.appointment .call {
+  margin-right: 3rem;
+}
+.appointment .call .fa-phone {
+  color: var(--green-color);
+  margin-right: 1rem;
+}
+
+/***** Section *****/
+@media (width > 768px) {
+  .slicknav_menu {
+    display: none;
+  }
+}
+/***** End Section *****/
+.slicknav_menu {
+  position: absolute;
+  z-index: 30;
+  width: calc(100% - 7rem);
+  left: 3.2rem;
+  top: 8rem;
+}
+
+.slicknav_menu li a {
+  text-align: start !important;
+}

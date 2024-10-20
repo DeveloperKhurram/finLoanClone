@@ -1,7 +1,6 @@
 @import url("header.css");
 @import url("hero-section.css");
 @import url("offer-section.css");
-@import url("responsive.css");
 :root {
   --green-color: #33d4d6;
   --primary-color: #fff;
@@ -28,8 +27,7 @@ body {
   font-weight: 300;
   color: var(--gray-color);
 
-  /* background: var(--primary-color); */
-  background: yellow;
+  background: var(--primary-color);
 }
 h1 {
   font-size: clamp(2.8rem, 4.7vw, 6rem) !important;
@@ -128,3 +126,42 @@ a {
     color: var(--green-color) !important;
   }
 }
+
+/***** Section *****/
+
+@media (width <= 768px) {
+  h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    line-height: 35px;
+  }
+  p {
+    margin-bottom: 15px;
+    margin-top: 10px;
+  }
+}
+@media (width > 768px) {
+  h1 {
+    font-size: 34px;
+    line-height: 1.4;
+    margin-bottom: 35px;
+  }
+}
+@media (width > 992px) {
+  h1 {
+    font-size: 40px;
+    line-height: 1.4;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+@media (width > 1200px) {
+  h1 {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 74px;
+  }
+}
+
+/***** End Section *****/
