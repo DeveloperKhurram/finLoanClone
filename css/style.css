@@ -1,6 +1,6 @@
 @import url("header.css");
 @import url("hero-section.css");
-@import url("offer-section.css");
+/* @import url("offer-section.css"); */
 :root {
   --green-color: #33d4d6;
   --primary-color: #fff;
@@ -27,7 +27,9 @@ body {
   font-weight: 300;
   color: var(--gray-color);
 
-  background: var(--primary-color);
+  /* background: var(--primary-color); */
+
+  background: crimson;
 }
 h1 {
   font-size: clamp(2.8rem, 4.7vw, 6rem) !important;

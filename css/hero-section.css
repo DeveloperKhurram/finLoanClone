@@ -1,4 +1,4 @@
-/* .hero-section {
+.hero-section {
   background: var(--linear-gradient),
     url("../images/banner.png") 70% / cover no-repeat;
     padding: 22rem 0 15rem;
@@ -28,4 +28,4 @@
   .application{
   padding: 2rem;
   }
-} */
+}
