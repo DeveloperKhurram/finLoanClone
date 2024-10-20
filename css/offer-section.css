@@ -11,10 +11,10 @@
     padding: 5rem 0 3rem;
   }
 }
-.offer-section .heading {
+:is(.offer-section, .work-section) .heading {
   margin-bottom: 5rem;
 }
-.offer-section .heading .border {
+:is(.offer-section, .work-section) .heading .border {
   display: inline-block;
   background: var(--green-color);
   width: 6rem;
