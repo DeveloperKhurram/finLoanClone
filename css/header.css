@@ -31,7 +31,7 @@ header {
 /***** Section *****/
 @media (width > 768px) {
   .slicknav_menu {
-    display: none;
+    display: none !important;
   }
 }
 /***** End Section *****/

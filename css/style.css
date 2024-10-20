@@ -2,10 +2,11 @@
 @import url("hero-section.css");
 @import url("offer-section.css");
 :root {
-  --green-color: #33d4d6;
   --primary-color: #fff;
   --secondary-color: #040e27;
   --gray-color: #7a838b;
+  --green-color: #33d4d6;
+  --blue-color: #0a8cff;
 
   --linear-gradient: linear-gradient(#040e27b3, #040e27b3);
   --card-gradient: linear-gradient(rgb(10, 140, 255) 0%, rgb(5, 70, 128) 100%);
@@ -24,12 +25,10 @@ html {
 }
 body {
   font-size: 1.6rem;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--gray-color);
 
-  /* background: var(--primary-color); */
-
-  background: crimson;
+  background: var(--primary-color);
 }
 h1 {
   font-size: clamp(2.8rem, 4.7vw, 6rem) !important;
@@ -167,3 +166,9 @@ a {
 }
 
 /***** End Section *****/
+.row {
+  margin: 0 !important;
+}
+.p32 {
+  padding: 0 3.2rem !important;
+}
