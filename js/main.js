@@ -30,6 +30,8 @@ dropdowns.forEach((dropdown) => {
 $(document).ready(function () {
   $("select").niceSelect();
 
+  $(".owl-carousel").owlCarousel();
+
   if ($.fn.slicknav) {
     $('#menu').slicknav({
        label: '',

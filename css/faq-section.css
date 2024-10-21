@@ -1,0 +1,17 @@
+.faq-section {
+  margin-bottom: 15rem;
+}
+.faq-img {
+  height: 100%;
+}
+.faqs {
+  display: flex;
+  flex-direction: column;
+  padding: 13rem 6.4rem;
+  width: 50% !important;
+}
+@media (width <= 768px) {
+  .faqs{
+    width: 100% !important;
+  }
+}
