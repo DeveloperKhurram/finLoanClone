@@ -1,5 +1,5 @@
 AOS.init({
-  duration: 2500, 
+  duration: 2500,
   once: true,
 });
 
@@ -30,14 +30,36 @@ dropdowns.forEach((dropdown) => {
 $(document).ready(function () {
   $("select").niceSelect();
 
-  $(".owl-carousel").owlCarousel();
+  var brand = $(".brand_carousel");
+  if (brand.length) {
+    brand.owlCarousel({
+      loop: true,
+      autoplay: true,
+      nav: false,
+      dots: false,
+      autoplayHoverPause: true,
+      autoplaySpeed: 800,
+      responsive: {
+        0: {
+          items: 2,
+          nav: false,
+        },
+        767: {
+          items: 4,
+        },
+        992: {
+          items: 5,
+        },
+      },
+    });
+  }
 
   if ($.fn.slicknav) {
-    $('#menu').slicknav({
-       label: '',
-       duration: 800,
+    $("#menu").slicknav({
+      label: "",
+      duration: 800,
     });
- } else {
-    console.error('SlickNav is not initialized');
- }
+  } else {
+    console.error("SlickNav is not initialized");
+  }
 });
