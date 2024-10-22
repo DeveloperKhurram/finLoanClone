@@ -54,6 +54,38 @@ $(document).ready(function () {
     });
   }
 
+  $(".testimonial_carousel").owlCarousel({
+    loop: true,
+    margin: 0,
+    items: 1,
+    autoplay: true,
+    navText: [
+      '<i class="fa-solid fa-chevron-left"></i>',
+      '<i class="fa-solid fa-chevron-right"></i>',
+    ],
+    nav: true,
+    dots: false,
+    autoplayHoverPause: true,
+    autoplaySpeed: 800,
+    responsive: {
+      0: {
+        items: 1,
+        nav: false,
+      },
+      767: {
+        items: 1,
+        nav: false,
+      },
+      992: {
+        items: 1,
+        nav: false,
+      },
+      1200: {
+        items: 1,
+      },
+    },
+  });
+
   if ($.fn.slicknav) {
     $("#menu").slicknav({
       label: "",

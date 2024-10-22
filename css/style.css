@@ -3,7 +3,7 @@
 @import url("offer-section.css");
 @import url("work-section.css");
 @import url("faq-section.css");
-
+@import url("testimonial-section.css");
 @import url("brand-section.css");
 @import url("apply.section.css");
 @import url("footer.css");
@@ -141,7 +141,7 @@ a {
     color: var(--green-color) !important;
   }
 }
-.btn-blue{
+.btn-blue {
   background-color: var(--blue-color) !important;
 
   &:hover,
