@@ -104,7 +104,7 @@ a {
     color: var(--green-color) !important;
   }
 }
-.nav-link.active{
+.nav-link.active, .dropdown-item.active{
   color: var(--green-color) !important;
 }
 .btn-normal,

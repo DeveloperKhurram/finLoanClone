@@ -46,6 +46,9 @@ header {
 .slicknav_menu li a {
   text-align: start !important;
 }
+.slicknav_menu li.active {
+  color: var(--green-color) !important;
+}
 .slicknav_menu li a.active {
   color: var(--green-color) !important;
 }
