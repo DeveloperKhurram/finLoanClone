@@ -29,7 +29,7 @@ header {
 }
 
 /***** Section *****/
-@media (width > 768px) {
+@media (width >= 768px) {
   .slicknav_menu {
     display: none !important;
   }
@@ -45,4 +45,7 @@ header {
 
 .slicknav_menu li a {
   text-align: start !important;
+}
+.slicknav_menu li a.active {
+  color: var(--green-color) !important;
 }

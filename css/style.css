@@ -104,6 +104,9 @@ a {
     color: var(--green-color) !important;
   }
 }
+.nav-link.active{
+  color: var(--green-color) !important;
+}
 .btn-normal,
 .btn-outline {
   display: inline-block;
