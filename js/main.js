@@ -60,8 +60,8 @@ $(document).ready(function () {
     items: 1,
     autoplay: true,
     navText: [
-      '<i class="fa-solid fa-chevron-left"></i>',
       '<i class="fa-solid fa-chevron-right"></i>',
+      '<i class="fa-solid fa-chevron-left"></i>',
     ],
     nav: true,
     dots: false,
@@ -80,7 +80,7 @@ $(document).ready(function () {
         items: 1,
         nav: false,
       },
-      1200: {
+      1024: {
         items: 1,
       },
     },
