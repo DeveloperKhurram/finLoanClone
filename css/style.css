@@ -104,7 +104,8 @@ a {
     color: var(--green-color) !important;
   }
 }
-.nav-link.active, .dropdown-item.active{
+.nav-link.active,
+.dropdown-item.active {
   color: var(--green-color) !important;
 }
 .btn-normal,
@@ -144,7 +145,6 @@ a {
   }
 }
 .btn-blue {
-
   display: inline-block;
   font-size: 1.6rem;
   font-weight: 500;
@@ -152,7 +152,6 @@ a {
   text-transform: capitalize;
   cursor: pointer;
   padding: 1.2rem;
-
 
   background-color: var(--blue-color) !important;
 
@@ -201,3 +200,82 @@ a {
 .p32 {
   padding: 0 3.2rem !important;
 }
+input,
+textarea {
+  border: 1px solid rgb(232, 232, 232);
+  padding: 0 3rem 0 1.8rem;
+  border-radius: 5px;
+  margin-bottom: 15px;
+
+  &:focus,
+  &:active {
+    outline: none;
+    border: 0.1rem solid var(--gray-color);
+  }
+}
+input {
+  height: 4.2rem;
+}
+.loan-section .application {
+  border: 0.1rem solid var(--gray-light);
+  margin: 10rem 0;
+}
+#datepicker {
+  position: relative;
+  width: 100%;
+  padding-right: 30px;
+}
+#datepicker + .fa-solid.fa-chevron-down {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #7c2020;
+}
+
+.ui-datepicker {
+  background-color: var(--gray-color);
+  border: 1px solid var(--gray-light);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  color: var(--primary-color);
+}
+
+.ui-datepicker td {
+  text-align: center;
+  padding: 10px;
+}
+
+.ui-datepicker-header {
+  background-color: var(--gray-light) !important;
+  color: var(--primary-color);
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* .ui-datepicker-prev,
+.ui-datepicker-next {
+  cursor: pointer;
+}
+.ui-datepicker-prev {
+  position: absolute;
+  left: 3rem;
+}
+.ui-datepicker-next {
+  position: absolute;
+  right: 3rem;
+}
+
+.ui-datepicker-prev span,
+.ui-datepicker-next span {
+  font-size: 16px;
+  color: white;
+}
+
+.ui-datepicker .ui-state-active {
+  background-color: #007bff;
+  color: yellow !important;
+  border-radius: 50%;
+} */

@@ -30,6 +30,13 @@ dropdowns.forEach((dropdown) => {
 $(document).ready(function () {
   $("select").niceSelect();
 
+//   $('#datepicker').datepicker({
+//     iconsLibrary: 'fontawesome',
+//     icons: {
+//      rightIcon: '<i class="fa-solid fa-chevron-down"></i>'
+//  }
+// });
+
   var brand = $(".brand_carousel");
   if (brand.length) {
     brand.owlCarousel({
