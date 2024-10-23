@@ -6,6 +6,7 @@
 @import url("testimonial-section.css");
 @import url("brand-section.css");
 @import url("apply.section.css");
+@import url("contact-section.css");
 @import url("footer.css");
 :root {
   --primary-color: #fff;
@@ -200,26 +201,7 @@ a {
 .p32 {
   padding: 0 3.2rem !important;
 }
-input,
-textarea {
-  border: 1px solid rgb(232, 232, 232);
-  padding: 0 3rem 0 1.8rem;
-  border-radius: 5px;
-  margin-bottom: 15px;
 
-  &:focus,
-  &:active {
-    outline: none;
-    border: 0.1rem solid var(--gray-color);
-  }
-}
-input {
-  height: 4.2rem;
-}
-.loan-section .application {
-  border: 0.1rem solid var(--gray-light);
-  margin: 10rem 0;
-}
 #datepicker {
   position: relative;
   width: 100%;
