@@ -105,6 +105,9 @@ a {
     color: var(--green-color) !important;
   }
 }
+.dropdown-menu .dropdown-item {
+  text-align: start !important;
+}
 .nav-link.active,
 .dropdown-item.active {
   color: var(--green-color) !important;
