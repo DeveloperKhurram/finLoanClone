@@ -1,422 +1,330 @@
-.blog_area a {
-    color: #666666 !important;
-    text-decoration: none;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-  }
-  
-  /* line 14, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog_area a:hover, .blog_area a :hover {
-    background: -webkit-linear-gradient(131deg, #33D4D6 0%, #33D4D6 99%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-decoration: none;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-  }
-  .section-padding {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
+.blog-section {
+  padding: 12rem 0;
+}
+.blog-section h4 {
+  color: var(--secondary-color);
+}
+.blog-section a {
+  color: var(--gray-color) !important;
+}
+/*! Blog Cards */
+.blog-card {
+  margin-bottom: 5rem;
+  max-width: 76rem;
+}
+.card-image {
+  position: relative;
+}
 
-  .blog_item {
-    margin-bottom: 50px;
-  }
-  
-  /* line 529, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog_details {
-    padding: 30px 0 20px 10px;
-    box-shadow: 0px 10px 20px 0px rgba(221, 221, 221, 0.3);
-  }
-  
-  @media (min-width: 768px) {
-    /* line 529, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-    .blog_details {
-      padding: 60px 30px 35px 35px;
-    }
-  }
-  
-  /* line 537, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog_details p {
-    margin-bottom: 30px;
-    font-family: "Roboto", sans-serif;
-  }
-  
-  /* line 542, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog_details a {
-    color: #ff8b23;
-  }
-  
-  /* line 545, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog_details a:hover {
-    color: #33D4D6;
-  }
-  
-  /* line 550, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog_details h2 {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 8px;
-  }
-  
-  @media (min-width: 768px) {
-    /* line 550, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-    .blog_details h2 {
-      font-size: 24px;
-      margin-bottom: 15px;
-    }
-  }
-  
-  /* line 564, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog-info-link li {
-    float: left;
-    font-size: 14px;
-  }
-  
-  /* line 568, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog-info-link li a {
-    color: #999999;
-  }
-  
-  /* line 572, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog-info-link li i,
-  .blog-info-link li span {
-    font-size: 13px;
-    margin-right: 5px;
-  }
-  
-  /* line 578, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog-info-link li::after {
-    content: "|";
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  
-  /* line 584, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog-info-link li:last-child::after {
-    display: none;
-  }
-  
-  /* line 589, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog-info-link::after {
-    content: "";
-    display: block;
-    clear: both;
-    display: table;
-  }
-  
-  /* line 597, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog_item_img {
-    position: relative;
-  }
-  
-  /* line 600, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog_item_img .blog_item_date {
-    position: absolute;
-    bottom: -10px;
-    left: 10px;
-    display: block;
-    color: #fff;
-    background-color: #33D4D6 !important;
-    padding: 8px 15px;
-    border-radius: 5px;
-  }
-  
-  @media (min-width: 768px) {
-    /* line 600, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-    .blog_item_img .blog_item_date {
-      bottom: -20px;
-      left: 40px;
-      padding: 13px 30px;
-    }
-  }
-  
-  /* line 616, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog_item_img .blog_item_date h3 {
-    font-size: 22px;
-    font-weight: 600;
-    color: #fff;
-    margin-bottom: 0;
-    line-height: 1.2;
-  }
-  
-  @media (min-width: 768px) {
-    /* line 616, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-    .blog_item_img .blog_item_date h3 {
-      font-size: 30px;
-    }
-  }
-  
-  /* line 628, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog_item_img .blog_item_date p {
-    font-size: 18px;
-    margin-bottom: 0;
-    color: #fff;
-  }
-  
-  @media (min-width: 768px) {
-    /* line 628, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-    .blog_item_img .blog_item_date p {
-      font-size: 18px;
-    }
-  }
-  
-  /* line 648, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog_right_sidebar .widget_title {
-    font-size: 20px;
-    margin-bottom: 40px;
-  }
-  
-  /* line 653, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog_right_sidebar .widget_title::after {
-    content: "";
-    display: block;
-    padding-top: 15px;
-    border-bottom: 1px solid #f0e9ff;
-  }
-  
-  /* line 661, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog_right_sidebar .single_sidebar_widget {
-    background: #fbf9ff;
-    padding: 30px;
-    margin-bottom: 30px;
-  }
-  
-  /* line 665, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog_right_sidebar .single_sidebar_widget .btn_1 {
-    margin-top: 0px;
-  }
-  
-  /* line 673, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog_right_sidebar .search_widget .form-control {
-    height: 50px;
-    border-color: #f0e9ff;
-    font-size: 13px;
-    color: #999999;
-    padding-left: 20px;
-    border-radius: 0;
-    border-right: 0;
-  }
-  
-  /* line 682, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog_right_sidebar .search_widget .form-control::placeholder {
-    color: #999999;
-  }
-  
-  /* line 686, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog_right_sidebar .search_widget .form-control:focus {
-    border-color: #f0e9ff;
-    outline: 0;
-    box-shadow: none;
-  }
-  
-  /* line 695, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog_right_sidebar .search_widget .input-group button {
-    background: #fff;
-    border-left: 0;
-    border: 1px solid #f0e9ff;
-    padding: 4px 15px;
-    border-left: 0;
-  }
-  
-  /* line 702, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog_right_sidebar .search_widget .input-group button i,
-  .blog_right_sidebar .search_widget .input-group button span {
-    font-size: 14px;
-    color: #999999;
-  }
-  
-  /* line 714, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog_right_sidebar .newsletter_widget .form-control {
-    height: 50px;
-    border-color: #f0e9ff;
-    font-size: 13px;
-    color: #999999;
-    padding-left: 20px;
-    border-radius: 0;
-  }
-  
-  /* line 723, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog_right_sidebar .newsletter_widget .form-control::placeholder {
-    color: #999999;
-  }
-  
-  /* line 727, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog_right_sidebar .newsletter_widget .form-control:focus {
-    border-color: #f0e9ff;
-    outline: 0;
-    box-shadow: none;
-  }
-  
-  /* line 736, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog_right_sidebar .newsletter_widget .input-group button {
-    background: #fff;
-    border-left: 0;
-    border: 1px solid #f0e9ff;
-    padding: 4px 15px;
-    border-left: 0;
-  }
-  
-  /* line 743, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog_right_sidebar .newsletter_widget .input-group button i,
-  .blog_right_sidebar .newsletter_widget .input-group button span {
-    font-size: 14px;
-    color: #999999;
-  }
-  
-  /* line 756, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog_right_sidebar .post_category_widget .cat-list li {
-    border-bottom: 1px solid #f0e9ff;
-    transition: all 0.3s ease 0s;
-    padding-bottom: 12px;
-  }
-  
-  /* line 761, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog_right_sidebar .post_category_widget .cat-list li:last-child {
-    border-bottom: 0;
-  }
-  
-  /* line 765, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog_right_sidebar .post_category_widget .cat-list li a {
-    font-size: 14px;
-    line-height: 20px;
-    color: #888888;
-  }
-  
-  /* line 770, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog_right_sidebar .post_category_widget .cat-list li a p {
-    margin-bottom: 0px;
-  }
-  
-  /* line 775, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog_right_sidebar .post_category_widget .cat-list li + li {
-    padding-top: 15px;
-  }
-  
-  /* line 792, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog_right_sidebar .popular_post_widget .post_item .media-body {
-    justify-content: center;
-    align-self: center;
-    padding-left: 20px;
-  }
-  
-  /* line 797, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog_right_sidebar .popular_post_widget .post_item .media-body h3 {
-    font-size: 16px;
-    line-height: 20px;
-    margin-bottom: 6px;
-    transition: all 0.3s linear;
-  }
-  
-  /* line 808, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog_right_sidebar .popular_post_widget .post_item .media-body a:hover {
-    color: #fff;
-  }
-  
-  /* line 814, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog_right_sidebar .popular_post_widget .post_item .media-body p {
-    font-size: 14px;
-    line-height: 21px;
-    margin-bottom: 0px;
-  }
-  
-  /* line 821, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog_right_sidebar .popular_post_widget .post_item + .post_item {
-    margin-top: 20px;
-  }
-  
-  /* line 829, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog_right_sidebar .tag_cloud_widget ul li {
-    display: inline-block;
-  }
-  
-  /* line 832, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog_right_sidebar .tag_cloud_widget ul li a {
-    display: inline-block;
-    border: 1px solid #eeeeee;
-    background: #fff;
-    padding: 4px 20px;
-    margin-bottom: 8px;
-    margin-right: 3px;
-    transition: all 0.3s ease 0s;
-    color: #888888;
-    font-size: 13px;
-  }
-  
-  /* line 843, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog_right_sidebar .tag_cloud_widget ul li a:hover {
-    background: #33D4D6;
-    color: #fff !important;
-    -webkit-text-fill-color: #fff;
-    text-decoration: none;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-  }
-  
-  /* line 858, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog_right_sidebar .instagram_feeds .instagram_row {
-    display: flex;
-    margin-right: -6px;
-    margin-left: -6px;
-  }
-  
-  /* line 864, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog_right_sidebar .instagram_feeds .instagram_row li {
-    width: 33.33%;
-    float: left;
-    padding-right: 6px;
-    padding-left: 6px;
-    margin-bottom: 15px;
-  }
-  
-  /* line 964, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog_right_sidebar .br {
-    width: 100%;
-    height: 1px;
-    background: #eeeeee;
-    margin: 30px 0px;
-  }
-  
-  /* line 985, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog-pagination {
-    margin-top: 80px;
-  }
-  
-  /* line 989, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog-pagination .page-link {
-    font-size: 14px;
-    position: relative;
-    display: block;
-    padding: 0;
-    text-align: center;
-    margin-left: -1px;
-    line-height: 45px;
-    width: 45px;
-    height: 45px;
-    border-radius: 0 !important;
-    color: #8a8a8a;
-    border: 1px solid #f0e9ff;
-    margin-right: 10px;
-  }
-  
-  /* line 1006, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog-pagination .page-link i,
-  .blog-pagination .page-link span {
-    font-size: 13px;
-  }
-  
-  /* line 1018, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog-pagination .page-item.active .page-link {
-    background-color: #fbf9ff;
-    border-color: #f0e9ff;
-    color: #888888;
-  }
-  
-  /* line 1025, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog.scss */
-  .blog-pagination .page-item:last-child .page-link {
-    margin-right: 0;
-  }
+.card-image .card-date {
+  position: absolute;
+  bottom: -10px;
+  left: 10px;
+  display: block;
+  color: var(--primary-color);
+  background-color: var(--green-color) !important;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+}
 
-  .blog_area h4{
-    color: var(--secondary-color);
+@media (min-width: 768px) {
+  .card-image .card-date {
+    bottom: -2rem;
+    left: 4rem;
+    padding: 1.3rem 3rem;
   }
+}
+
+.card-image .card-date h3 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 0;
+  line-height: 1.2;
+}
+
+.card-image .card-date p {
+  font-size: 1.8rem;
+  margin-bottom: 0;
+  color: var(--primary-color);
+}
+.blog-detail {
+  padding: 3rem 0 2rem 1rem;
+  box-shadow: 0 1rem 2rem 0 var(--gray-light);
+}
+
+.blog-detail p {
+  margin-bottom: 3rem;
+}
+
+.blog-detail h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+
+  &:hover {
+    color: var(--green-color) !important;
+  }
+}
+
+@media (width>= 768px) {
+  .card-image .card-date h3 {
+    font-size: 3rem;
+  }
+  .card-image .card-date p {
+    font-size: 1.8rem;
+  }
+  .blog-detail {
+    padding: 6rem 3rem 3.5rem 3.5rem;
+  }
+  .blog-detail h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+  }
+}
+.blog-info {
+  display: flex !important;
+}
+.blog-info li {
+  font-size: 1.4rem !important;
+}
+.blog-info li a {
+  color: var(--gray-color);
+}
+
+.blog-info li .icon {
+  font-size: 1.3rem;
+  margin-right: 0.5rem;
+}
+.blog-info li::after {
+  content: "|";
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.blog-info li:last-child::after {
+  display: none;
+}
+/*! Pagination */
+
+.blog-pagination {
+  margin-top: 8rem;
+  display: flex;
+  justify-content: center;
+}
+
+.blog-pagination .page-link {
+  font-size: 1.4rem;
+  /* position: relative; */
+  /* display: block; */
+  padding: 0;
+  text-align: center;
+  margin-left: -0.1rem;
+  line-height: 4.5rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 0 !important;
+  color: var(--secondary-color);
+  border: 1px solid var(--gray-light);
+  margin-right: 1rem;
+}
+
+.blog-pagination .page-link i{
+  font-size: 1.3rem;
+}
+
+.blog-pagination .page-item.active .page-link {
+  background-color: transparent;
+  border-color: var(--gray-color);
+  color: var(--green-color) !important;
+}
+
+.blog-pagination .page-item:last-child .page-link {
+  margin-right: 0;
+}
+/*! Sidebar */
+.blog-right .widget_title {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.blog-right .widget_title::after {
+  content: "";
+  display: block;
+  padding-top: 15px;
+  border-bottom: 1px solid #f0e9ff;
+}
+
+.blog-right .sidebar-widget {
+  background: #fbf9ff;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.blog-right .sidebar-widget .btn_1 {
+  margin-top: 0px;
+}
+
+.blog-right .search_widget .form-control {
+  height: 50px;
+  border-color: #f0e9ff;
+  font-size: 13px;
+  color: #999999;
+  padding-left: 20px;
+  border-radius: 0;
+  border-right: 0;
+}
+
+.blog-right .search_widget .form-control::placeholder {
+  color: #999999;
+}
+
+.blog-right .search_widget .form-control:focus {
+  border-color: #f0e9ff;
+  outline: 0;
+  box-shadow: none;
+}
+
+.blog-right .search_widget .input-group button {
+  background: #fff;
+  border-left: 0;
+  border: 1px solid #f0e9ff;
+  padding: 4px 15px;
+  border-left: 0;
+}
+
+.blog-right .search_widget .input-group button i,
+.blog-right .search_widget .input-group button span {
+  font-size: 14px;
+  color: #999999;
+}
+
+.blog-right .newsletter_widget .form-control {
+  height: 50px;
+  border-color: #f0e9ff;
+  font-size: 13px;
+  color: #999999;
+  padding-left: 20px;
+  border-radius: 0;
+}
+
+.blog-right .newsletter_widget .form-control::placeholder {
+  color: #999999;
+}
+
+.blog-right .newsletter_widget .form-control:focus {
+  border-color: #f0e9ff;
+  outline: 0;
+  box-shadow: none;
+}
+
+.blog-right .newsletter_widget .input-group button {
+  background: #fff;
+  border-left: 0;
+  border: 1px solid #f0e9ff;
+  padding: 4px 15px;
+  border-left: 0;
+}
+
+.blog-right .newsletter_widget .input-group button i,
+.blog-right .newsletter_widget .input-group button span {
+  font-size: 14px;
+  color: #999999;
+}
+
+.blog-right .categories .cat-list li {
+  border-bottom: 1px solid #f0e9ff;
+  transition: all 0.3s ease 0s;
+  padding-bottom: 12px;
+}
+
+.blog-right .categories .cat-list li:last-child {
+  border-bottom: 0;
+}
+
+.blog-right .categories .cat-list li a {
+  font-size: 14px;
+  line-height: 20px;
+  color: #888888;
+}
+
+.blog-right .categories .cat-list li a p {
+  margin-bottom: 0px;
+}
+
+.blog-right .categories .cat-list li + li {
+  padding-top: 15px;
+}
+.media{
+  display: flex;
+}
+.blog-right .recent-post .post_item .media-body {
+  justify-content: center;
+  align-self: center;
+  padding-left: 20px;
+}
+
+.blog-right .recent-post .post_item .media-body h3 {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 6px;
+  transition: all 0.3s linear;
+}
+
+.blog-right .recent-post .post_item .media-body a:hover {
+  color: #fff;
+}
+
+.blog-right .recent-post .post_item .media-body p {
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 0px;
+}
+
+.blog-right .recent-post .post_item + .post_item {
+  margin-top: 20px;
+}
+
+.blog-right .tag_cloud_widget ul li {
+  display: inline-block;
+}
+
+.blog-right .tag_cloud_widget ul li a {
+  display: inline-block;
+  border: 1px solid #eeeeee;
+  background: #fff;
+  padding: 4px 20px;
+  margin-bottom: 8px;
+  margin-right: 3px;
+  transition: all 0.3s ease 0s;
+  color: #888888;
+  font-size: 13px;
+}
+
+.blog-right .tag_cloud_widget ul li a:hover {
+  background: #33d4d6;
+  color: #fff !important;
+  -webkit-text-fill-color: #fff;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.blog-right .instagram_feeds .instagram_row {
+  display: flex;
+  margin-right: -6px;
+  margin-left: -6px;
+}
+
+.blog-right .instagram_feeds .instagram_row li {
+  width: 33.33%;
+  float: left;
+  padding-right: 6px;
+  padding-left: 6px;
+  margin-bottom: 15px;
+}
+
+.blog-right .br {
+  width: 100%;
+  height: 1px;
+  background: #eeeeee;
+  margin: 30px 0px;
+}
