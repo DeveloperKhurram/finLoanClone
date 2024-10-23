@@ -33,38 +33,48 @@
   opacity: 0.4;
   transition: scale 0.3s linear;
 
-&:hover{
+  &:hover {
     background-color: var(--blue-color);
     border: 0.1rem solid var(--blue-color);
     opacity: 1;
     scale: 1.1;
-}
+  }
 
   &:hover .fa-brands {
     color: var(--primary-color);
   }
 }
-.footer-widget form{
-    border: 0.1rem solid var(--gray-light);
-    padding: 0.25rem 0 0.25rem 1.2rem;
-    border-radius: 0.5rem;
-    display: flex;
-    /* max-width: 5rem; */
+.footer-widget form {
+  border: 0.1rem solid var(--gray-light);
+  padding: 0.25rem 0;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  align-items: center;
 
-    /* background-color: pink; */
-    
-    & input{
-        box-shadow: none;
-        outline: none;
-        border: none;
-        /* background-color: yellow; */
-        /* max-width: 16rem; */
-        flex: 1 0 0;
-    }
+  & input {
+    box-shadow: none;
+    outline: none;
+    border: none;
+    /* background-color: yellow; */
+    max-width: 70%;
+    height: 4.2rem !important;
+    /* flex: 1 0 0; */
+    padding: 1.2rem !important;
+    margin: 0;
+  }
 
-    &:focus-within{
-        border: var(--blue-border);
-    }
+  & .btn-blue {
+    max-width: 30%;
+    font-size: 1.2rem !important;
+    height: 4.2rem !important;
+    margin: 0;
+  }
+
+  &:focus-within {
+    border: var(--blue-border);
+  }
 }
 .footer-bottom {
   padding-bottom: 3.2rem;
@@ -72,4 +82,17 @@
 .colorlib {
   color: var(--blue-color) !important;
   cursor: pointer;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .footer-widget form {
+    & .btn-blue {
+      font-size: 1.2rem !important;
+      margin-right: 2rem !important;
+      max-width: 35%;
+    }
+
+    & input {
+      max-width: 65%;
+    }
+  }
 }
