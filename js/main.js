@@ -30,12 +30,35 @@ dropdowns.forEach((dropdown) => {
 $(document).ready(function () {
   $("select").niceSelect();
 
-//   $('#datepicker').datepicker({
-//     iconsLibrary: 'fontawesome',
-//     icons: {
-//      rightIcon: '<i class="fa-solid fa-chevron-down"></i>'
-//  }
-// });
+  // TOP Menu Sticky
+  $(window).on("scroll", function () {
+    var scroll = $(window).scrollTop();
+    if (scroll < 400) {
+      $("#sticky-header").removeClass("sticky");
+      $("#back-top").fadeIn(500);
+    } else {
+      $("#sticky-header").addClass("sticky");
+      $("#back-top").fadeIn(500);
+    }
+  });
+
+  $(window).on("scroll", function () {
+    var scroll = $(window).scrollTop();
+    if (scroll < 400) {
+      $(".slicknav_menu").removeClass("sticky");
+      $("#back-top").fadeIn(500);
+    } else {
+      $(".slicknav_menu").addClass("sticky");
+      $("#back-top").fadeIn(500);
+    }
+  });
+
+  //   $('#datepicker').datepicker({
+  //     iconsLibrary: 'fontawesome',
+  //     icons: {
+  //      rightIcon: '<i class="fa-solid fa-chevron-down"></i>'
+  //  }
+  // });
 
   var brand = $(".brand_carousel");
   if (brand.length) {
