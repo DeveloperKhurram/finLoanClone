@@ -85,6 +85,15 @@
 .blog-info {
   display: flex !important;
 }
+
+@media (width <= 320px) {
+  .blog-info{
+    max-width: 29rem;
+  }
+  .blog-info li a{
+    font-size: 1.2rem !important;
+  }
+}
 .blog-info li {
   font-size: 1.4rem !important;
 }
@@ -267,6 +276,8 @@
   line-height: 20px;
   margin-bottom: 6px;
   transition: all 0.3s linear;
+
+  text-align: start;
 }
 
 .blog-right .recent-post .post_item .media-body a:hover {

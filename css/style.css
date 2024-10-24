@@ -8,6 +8,7 @@
 @import url("apply.section.css");
 @import url("contact-section.css");
 @import url("blog-section.css");
+@import url("blog-post.css");
 @import url("footer.css");
 :root {
   --primary-color: #fff;
